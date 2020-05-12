@@ -28,12 +28,12 @@ public final class OLED  {
     
     public init(connectedTo interface: I2CInterface, at address: Int, width: Int, height: Int) {
         
-        guard interface.isReachable(address) else {
+        /*guard interface.isReachable(address) else {
             fatalError("""
                 Can not reach display at given interface and address!
                 Make sure that those are correct and the everything is wired correctly!
                 """)
-        }
+        }*/
         self.i2c = interface
         self.address = address
         
